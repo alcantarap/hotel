@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     
-    <link type="text/css" rel="stylesheet" href="core/static/core/css/registro.css">
+    <link type="text/css" rel="stylesheet" href="../../static/core/css/registro.css">
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   
 </head>
 <body>
-    <div id= "titulo">
-        <h1>
-        Registro
-        </h1>
-      </div>
-      <p></p>
+  
+  <div class="container-fluid" id="fondo">
+
+
     
-      <div class="container">
+      <div class="container" id="container">
         <form name="registration" id="formulario">
+
+          <h1 align="center" id=titulo>
+            Registro
+            </h1>
     
         <p></p>
     
@@ -93,6 +95,7 @@
                   </div>
                 
               </div>
+              
             </div>
     
         <p></p>
@@ -102,24 +105,27 @@
               <div class="form-check">
                 <div class="text-center">
                   <input class="form-check-input" type="checkbox" value="confirme" name="confirme" id="confirme" >
-                  <label class="form-check-label" for="confirme">
+                  <label class="form-check-label" for="confirme" id="condiciones">
                     Estoy de acuerdo con Terminos y Condiciones
                   </label>
+                  <img src="https://i.ibb.co/MScsL4h/veranum-blanco.png" alt="Logo" id="logo">
                 </div>
               </div>
             </div>
           </div>
         </div>
     
-          <div class="form-group">
+          <div class="form-group" id="boton">
             <button class="btn btn-primary" type="submit" >Enviar</button>
 
           </div>
           
         </form>  
       </div>
+    </div>  
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>    
-
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>

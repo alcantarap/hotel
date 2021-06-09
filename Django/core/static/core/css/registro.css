@@ -17,15 +17,52 @@
   
   #formulario {
     padding: 20px;
-    background: rgb(65, 168, 160);
+    background: rgb(68, 163, 155);
     color: #fff;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
+    
+    border: 3px solid;
+    top:  80px;
+    left: 260px;
   }
+
+  #logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 400px;
+    max-height:150px
+    
+}
+
+#boton {
+  position: relative;
+  top:  -50px;
+}
+
+#confirme {
+  position: absolute;
+  top: 5px;
+  left: 25px;
   
-  
+}
+
+#condiciones {
+  left: 25px;
+  position: absolute;
+}
   
   .error {
     color: #ff0000;
   }
+
+  #fondo {
+    position: absolute;
+    background-color:rgb(78, 197, 187) ;
+    color: rgb(33, 165, 154);
+    letter-spacing: .05rem;
+    min-height: 100%;
+  }
+
