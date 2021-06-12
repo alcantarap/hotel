@@ -28,13 +28,12 @@
           },
           contraseña1: {
             required: true,
-            minlength: 8,
-            digits: true
+            minlength: 8
           },
           contraseña2: {
             required: true,
-            minlength: 8,
-            digits: true
+            minlength: 8
+
           },
   
         },
@@ -54,7 +53,7 @@
           correo:  "Por favor ingrese un correo valido",
           con_correo:  "Los correos no coinciden",
 
-          contraseña1: "Constraseña de 8 caracteres",
+          contraseña1: "Constraseña de  minimo de 8 caracteres",
           contraseña2: "Las constraseñas no coinciden"
         },     
         // Make sure the form is submitted to the destination defined
