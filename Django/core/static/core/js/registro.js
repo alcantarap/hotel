@@ -66,10 +66,10 @@ return this.optional(element) || /^[a-z ]+$/i.test(value);
           },
           
           correo:  "Por favor ingrese un correo valido",
-          con_correo:  "Los correos no coinciden",
+          con_correo:  "El correo no coincide",
 
-          contraseña1: "Constraseña de  minimo de 8 caracteres",
-          contraseña2: "Las constraseñas no coinciden"
+          contraseña1: "Contraseña de  minimo de 8 caracteres",
+          contraseña2: "La contraseña no coincide"
         },     
         // Make sure the form is submitted to the destination defined
         // in the "action" attribute of the form when valid
