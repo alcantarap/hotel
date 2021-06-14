@@ -1,12 +1,19 @@
-
+jQuery.validator.addMethod("lettersonly", function(value, element) 
+{
+return this.optional(element) || /^[a-z ]+$/i.test(value);
+}, "Letters and spaces only please");
 
 // Initialize form validation on the registration form.
     // It has the name attribute "registration"
     $("form[name='registration']").validate({
         // Specify validation rules
         rules: {
-          Nombre: "required",
-          Apellidos: "required",
+          Nombre: 
+            {required: true, 
+            lettersonly: true} ,
+          Apellidos: 
+            {required: true, 
+            lettersonly: true} ,
           Nom_usu: "required",
           correo: {
             required: true,
@@ -18,7 +25,8 @@
             required: true,
             // Specify that email should be validated
             // by the built-in "email" rule
-            email: true
+            email: true,
+            equalTo:"#correo"
           },
                   
           Num: {
@@ -32,7 +40,8 @@
           },
           contraseña2: {
             required: true,
-            minlength: 8
+            minlength: 8,
+            equalTo:"#contraseña1"
 
           },
   
@@ -40,9 +49,15 @@
   
         // Specify validation error messages
         messages: {
-          Nombre: "Por favor ingrese su nombre",
+          Nombre: {
+            required: "Por favor ingrese su nombre",
+            lettersonly: "Solo letras y espacios por favor"
+          },
 
-          Apellidos: "Por favor ingrese su apellido",
+          Apellidos: {
+            required: "Por favor ingrese su nombre",
+            lettersonly: "Solo letras y espacios por favor"
+          },
           Nom_usu: "Por favor indique su nombre de usuario",
           Num: {
             required: "Por favor ingrese su numero",
