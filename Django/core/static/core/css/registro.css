@@ -60,7 +60,7 @@
 
   #fondo {
     position: absolute;
-    background-image: url("https://i.ibb.co/LYRscYp/Screenshot-2.png") ;
+    background-image: url('/static/core/img/fondo.jpg');
     background-size: 100%;
     color: rgb(33, 165, 154);
     letter-spacing: .05rem;
