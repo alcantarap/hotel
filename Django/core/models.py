@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 
 class Cliente(models.Model):
-    id_cliente = models.IntegerField(primary_key=True, verbose_name= 'Id Cliente' )
+    id_cliente = models.AutoField(primary_key=True, verbose_name= 'Id Cliente' )
     nombre = models.CharField(max_length= 100, verbose_name = 'Nombre Cliente' )
     apellido = models.CharField(max_length= 100, verbose_name = 'Apellido Cliente' )
     nom_usuario = models.CharField(max_length= 100, verbose_name = 'Nombre Usuario' )

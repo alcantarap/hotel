@@ -23,3 +23,12 @@ def add_Cliente (request):
             datos['mensaje'] = "Guardado Correctamente"
 
     return render(request, 'core/add_Cliente.html', datos)
+
+
+
+
+
+
+
+
+    
