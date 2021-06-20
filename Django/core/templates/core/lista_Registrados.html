@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Usuarios</h2>
+        <h2 class="text-center">Usuarios</h2>
         <table class="table table-striped table-dark">
             <tr>
                 <th>Nombre</th>
@@ -28,6 +28,13 @@
                     <td>{{ reg.nom_usuario }}</td>
                     <td>{{ reg.num_telefonico }}</td>
                     <td>{{ reg.correo }}</td>
+                    <td>
+                        <a href="{% url 'edit_cliente' reg.id_cliente %}" class="btn btn-primary" >Modificar</a>
+                        
+                    </td>
+                    <td>
+                        <a href="{% url 'delete_cliente' reg.id_cliente %}" class="btn btn-danger" >Eliminar</a>
+                    </td>
                 </tr>
             {% endfor %}
         </table>
