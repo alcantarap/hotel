@@ -1,0 +1,21 @@
+body{
+    background-image: url('/static/core/img/fondo.jpg');
+   /*  height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-size: 100%;
+    color: rgb(33, 165, 154);
+    letter-spacing: .05rem;
+    min-height: 100%;
+    position: relative;
+}
+
+h1{
+    color: white;
+}
+
+.form-group{
+    color: white;
+}
+

@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,18 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenedor de Clientes</title>
-
+    <link type="text/css" rel="stylesheet" href="{% static 'core/css/edit_cliente.css' %}">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 </head>
 <body>
     <div class="container">
-        <h2>Editar Clientes</h2>
+        <br>
+        <br>
+        <br>
+        <h1 class="text-center">Editar Clientes</h1>
         <form method="post" action="" id="formulario-editar">
             {% csrf_token %}
             <div class="form-group">
-                {{ form.as_p }}
+                <table>
+                    {{ form.as_table }}
+                </table>
             </div>
 
             <input type="submit" class="btn btn-primary" id="enviar" value="Editar">
